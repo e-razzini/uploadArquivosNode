@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <title>UPLOAD ARQUIVOS NODE</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1 class="text-primary">Formulario de upload de arquivos NODE-JS</h1>
+        <form action="/upload" method="post" enctype="multipart/form-data">
+              <div class="my-2 w-50">
+                <label for="formFileSm" class="form-label">Arquivo</label>
+                <input class="form-control form-control" id="formFileSm" name="arquivo" type="file">
+              </div>
+
+              <div class="my-3">
+                  <button class="btn btn-primary">SALVAR ARQUIVO</button>
+              </div>
+
+        </form>
+    </div>
+</body>
+
+</html>
