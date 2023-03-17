@@ -6,6 +6,7 @@ const app  = express();
 const path = require('path');
 app.use(bodyParser.urlencoded({extended:true}));
 
+app.use("/bootstrap",express.static("node_modules/bootstrap/dist/"));
 app.get("/",(req,res)=>{
     res.sendFile(__dirname + '/index.html');
 });
